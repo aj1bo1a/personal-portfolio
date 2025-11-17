@@ -289,7 +289,7 @@ img {
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
@@ -304,9 +304,10 @@ img {
 .project-info {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  min-height: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: auto;
+  flex: 1;
 }
 
 /* Project description text */
@@ -332,6 +333,8 @@ img {
   justify-content: center;
   width: 100%;
   margin-top: 1rem;
+  visibility: visible;
+  z-index: 10;
 }
 
 /* Individual project buttons */
@@ -372,6 +375,21 @@ img {
   background: var(--main-white);
   color: var(--main-gray);
   transform: scale(1.05);
+}
+
+@media (max-width: 28.75em) {
+  .btn-project {
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  .project-buttons {
+    gap: 0.8rem;
+  }
+
+  .project-info {
+    padding: 1.5rem;
+  }
 }
 
 .btn {
