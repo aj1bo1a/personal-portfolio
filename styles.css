@@ -157,11 +157,69 @@ img {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
+/* Welcome section text styles */
+.welcome-subtitle {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 1.2rem;
+  color: rgba(240, 240, 240, 0.95);
+  letter-spacing: 0.02rem;
+}
+
+.welcome-bio {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-top: 1.6rem;
+  max-width: 68rem;
+  text-align: center;
+  color: rgba(230, 230, 230, 0.9);
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+/* Wrapper for welcome content to apply entrance animation */
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0 1.6rem;
+  animation: fadeSlideUp 700ms ease-out both;
+}
+
+/* Profile picture: circular and responsive */
+.profile-pic {
+  width: clamp(10rem, 16vw, 18rem);
+  height: clamp(10rem, 16vw, 18rem);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.6rem solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Entrance animation: subtle fade and slide up */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 28.75em) {
+  .profile-pic {
+    width: 12rem;
+    height: 12rem;
+  }
+  .welcome-subtitle {
+    font-size: 2rem;
+  }
+  .welcome-bio {
+    font-size: 1.6rem;
+  }
 }
 
 /* Projects section */
