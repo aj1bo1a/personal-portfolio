@@ -217,36 +217,77 @@
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
         <h2>Let's work together</h2>
+        <p>Have a project or question? I'd love to hear from you!</p>
       </div>
-      <div class="contact-links">
-        <a
-          href="https://web.facebook.com/profile.php?id=100067485061430&sk=about"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-facebook-square"></i> Facebook</a
-        >
-        <a
-          id="profile-link"
-          href="https://github.com/aj1bo1a"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://x.com/Aj1bo1a"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-twitter"></i> Twitter</a
-        >
-        <a href="/cdn-cgi/l/email-protection#d0b5a8b1bda0bcb590b5a8b1bda0bcb5feb3bfbd" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="tel:+2347025594590" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Send Message</button>
+      </form>
+
+      <!-- Contact Links -->
+      <div class="contact-links-wrapper">
+        <p class="contact-or">or connect with me on</p>
+        <div class="contact-links">
+          <a
+            href="https://web.facebook.com/profile.php?id=100067485061430&sk=about"
+            target="_blank"
+            class="btn contact-details"
+            title="Facebook"
+            ><i class="fab fa-facebook-square"></i> Facebook</a
+          >
+          <a
+            href="https://github.com/aj1bo1a"
+            target="_blank"
+            class="btn contact-details"
+            id="profile-link"
+            title="GitHub"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/ajibola"
+            target="_blank"
+            class="btn contact-details"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a
+            href="https://x.com/Aj1bo1a"
+            target="_blank"
+            class="btn contact-details"
+            title="Twitter"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a href="mailto:ajibolaojo55@gmail.com" class="btn contact-details" title="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="tel:+2347025594590" class="btn contact-details" title="Phone">
+            <i class="fas fa-mobile-alt"></i> Call
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Ajibola. All rights reserved.</p>
+      <p>Designed &amp; Built with <i class="fas fa-heart"></i> by Ajibola</p>
+    </footer>
+    <!-- END FOOTER -->
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
