@@ -328,30 +328,38 @@ img {
 /* Project action buttons container */
 .project-buttons {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 /* Individual project buttons */
 .btn-project {
   flex: 1;
-  padding: 0.7rem 1.2rem;
-  font-size: 1.4rem;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
-  border-radius: 4px;
+  text-decoration: none;
+  border-radius: 6px;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 2px solid;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .btn-live {
   background: var(--main-red);
   color: var(--main-white);
+  border-color: var(--main-red);
 }
 
 .btn-live:hover {
   background: transparent;
   border-color: var(--main-red);
   color: var(--main-red);
+  transform: scale(1.05);
 }
 
 .btn-code {
@@ -363,6 +371,7 @@ img {
 .btn-code:hover {
   background: var(--main-white);
   color: var(--main-gray);
+  transform: scale(1.05);
 }
 
 .btn {
@@ -586,6 +595,11 @@ img {
 /* Contact Links Wrapper */
 .contact-links-wrapper {
   margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .contact-or {
@@ -606,8 +620,8 @@ img {
 
 .contact-details {
   font-size: 2.2rem;
-  color: var(--main-white);
-  text-decoration: none;
+  color: var(--main-white) !important;
+  text-decoration: none !important;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: all 0.3s ease;
   padding: 0.8rem 1.5rem;
@@ -616,13 +630,16 @@ img {
   align-items: center;
   gap: 0.6rem;
   cursor: pointer;
+  background: rgba(190, 49, 68, 0.15);
+  border: 1px solid rgba(190, 49, 68, 0.3);
 }
 
 .contact-details:hover {
   transform: translateY(-4px);
-  background: rgba(190, 49, 68, 0.2);
+  background: rgba(190, 49, 68, 0.3);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-  color: var(--main-white);
+  color: var(--main-white) !important;
+  border-color: rgba(190, 49, 68, 0.6);
 }
 
 @media (max-width: 28.75em) {
