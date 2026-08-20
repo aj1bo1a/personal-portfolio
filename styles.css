@@ -28,6 +28,7 @@ html {
   */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
 
 /* A few media query to set some font sizes at different screen sizes.
@@ -240,6 +241,111 @@ img {
   .projects-section-header {
     font-size: 4rem;
   }
+}
+
+/* Featured project */
+
+.featured-project-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 6rem auto;
+}
+
+.featured-badge {
+  display: inline-block;
+  background: var(--main-red);
+  color: var(--main-white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  margin-bottom: 1.6rem;
+}
+
+.featured-project {
+  display: flex;
+  background: var(--main-gray);
+  border: 2px solid var(--main-red);
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.featured-project-image {
+  flex: 0 0 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--main-red), var(--main-blue));
+  min-height: 280px;
+}
+
+.featured-project-image i {
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.featured-project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 3rem;
+}
+
+.featured-project-info .project-title {
+  text-align: left;
+  padding: 0 0 0.8rem 0;
+}
+
+.featured-project-info .project-buttons {
+  justify-content: flex-start;
+}
+
+.featured-project-info .btn-project {
+  flex: 0 0 auto;
+  padding: 0.9rem 2.5rem;
+}
+
+@media (max-width: 48em) {
+  .featured-project {
+    flex-direction: column;
+  }
+
+  .featured-project-image {
+    min-height: 180px;
+  }
+
+  .featured-project-image i {
+    font-size: 6rem;
+  }
+
+  .featured-project-info {
+    padding: 2rem;
+  }
+}
+
+/* Foundational projects subheader */
+
+.projects-subheader {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.projects-subheader-note {
+  font-size: 1.5rem;
+  color: rgba(240, 240, 240, 0.75);
+  margin-bottom: 4rem;
 }
 
 /* "Automagic" image grid using no media queries */
